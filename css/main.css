@@ -27,7 +27,8 @@
     z-index: 2;
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;  
+    align-items: center; 
+    
 }
 
 .menu ul{
@@ -45,9 +46,14 @@
     padding: 7px;
     border-radius: 15px;
     box-shadow: 2px 2px black;
+    transition: 0.5s;
     
-    
-    
+     
+}
+
+/* hover del menu */
+.menu ul li:hover{
+    transform: scale(1.1);
 }
 
 /* estilos logo */
@@ -57,12 +63,55 @@
     z-index: 3;
 }
 
+/* animacion logo */
+.logo{
+    animation-name: latir;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+
+}
+
+@keyframes latir{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+   
+}
+
+
+
 .ig{
     height: 20px;
+    transition: 0.4s;
+    
 }
+ /* hover de las redes */
+
+.ig:hover{
+    transform: scale(1.5);
+    margin-right:5px;
+}
+
+
 
 .fb{
     height: 20px;
+    transition: 0.4s;
+}
+
+.fb:hover{
+    transform: scale(1.5);
+    margin-left:5px;
 }
 
 /* grid main */
@@ -77,8 +126,8 @@
 }
 
 .presentacion{
-    background-image: url(/assets/guirnaldasPrincipal.jpg);
-    height: 600px;
+    background-image: linear-gradient(to left, rgb(218, 218, 218), rgb(228, 64, 217) );
+    height: 400px;
     grid-area: presentacion;
     width: 100%;
     display: flex;
@@ -88,6 +137,8 @@
 }
 .presentacion p{
     position: absolute;
+    color: rgb(32, 27, 27);
+    text-align: center;
     
 }
 
