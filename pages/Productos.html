@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">   
     
     <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
@@ -12,156 +15,123 @@
 
 <body>
     <!-- header -->
-    <header class="header" id ="arriba">
+    <header class="container header" id ="arriba">
 
         <!-- logo -->
-        <div>
-            <img class="logo" src="../assets/REDELUCES LOGO.png" alt=" Logo Redeluces ">
+        <div class="row">
+            <img class="col-12 logo " src="../assets/REDELUCES LOGO.png" alt=" Logo Redeluces ">
         </div>
-                
-        <!-- menu de navegacion -->
-        <nav class="menu">
-            <ul>
-                <li> 
-                    <a href="../index.html"> Incio </a>
-                </li>
-                <li> 
-                    <a href="../pages/Productos.html"> Productos  </a>
-                </li>
-                <li> 
-                    <a href="../pages/InfoTecnica.html"> Info Tecnica </a>
-                </li>
-                <li> 
-                    <a href="../pages/Nosotros.html"> Nosotros </a> 
-                </li>
-                <li> 
-                    <a href="../pages/Contactanos.html"> Contactanos </a>
-                </li>
-            </ul>
-        </nav>
 
-
-
-        <!-- logos de las redes sociales con el link a las paginas -->
-        <table class="redes">
-            <tbody>
-                <tr>
-                    <td> 
-                        <a href="https://www.instagram.com/redeluces/?hl=es" target="_blank">
-                            <img class="ig" src="../assets/ig logo.jpg" alt="">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://www.facebook.com/redeluces/" target="_blank">
-                            <img class="fb" src="../assets/fb.jpg" alt="">
-                        </a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <!--  barra de navegacion -->
+        <nav class="col-12 navbar navbar-expand-lg bg-info mb-2  ">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse botonesMenu" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../index.html">INICIO </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../pages/Productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold text-white" href="../pages/InfoTecnica.html">COMERCIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/Nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/Contactanos.html">CONTACTANOS</a>
+                        </li>
+                    </ul>
+                    <table class="redes">
+                        <tbody>
+                            <tr>
+                                <td> 
+                                    <a href="https://www.instagram.com/redeluces/?hl=es" target="_blank">
+                                        <img class="ig" src="../assets/ig logo.jpg" alt="">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://www.facebook.com/redeluces/" target="_blank">
+                                        <img class="fb" src="../assets/fb.jpg" alt="">
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          </nav>
     </header>
     
 
-    <!-- aca van todos los productos -->
-    <main class="mainProductos">
-        <div class="prodGuir">
-            <h2> Guirnaldas de luces </h2>
-            <p>
-            Todas nuestras guirnalda de luces de exterior son aptas lluvia. El metro de guirnalda cuenta con 2 portalámparas con sus respectivas lamparas (una separación de 50cm). 
-            Se arma de la medida deseada. Cuenta de manera estándar con 1.5m de cable libre con en enchufe macho y termina en el otro extremo con una ficha hembra con la posibilidad de vincular más tramos de guirnalda.
-            </p>
-        </div>  
-
-        <div class="guirVintage">
-            <h3>
-                GUIRNALDA CON LAMPARAS VINTAGE
-             </h3>
-             <p>
-                Lámparas incandescentes de transparentes color ámbar. Tonalidad luz cálida. Consumo eléctrico 15w. Material vidrio.
-             </p>
-             <img src="../assets/GUIRNALDA CON LAMPARAS VINTAGE.jpeg" width="300" height="400" alt="GUIRNALDA CON LAMPARAS VINTAGE">
-            
-             <!-- Boton COMPRAR con link para post mercado libre-->
-            <h4> COMPRAR </h4>
+    <section class="container">
+        <div class="row">
+            <div class="col-4 m-3 card" style="width: 18rem;">
+                <img src="../assets/editadas/GUIRNALDA CON LAMPARAS VINTAGE.png" class="card-img-top mt-2" alt="Neon">
+                <div class="card-body">
+                <h5 class="card-title">Guirnaldas Vintage</h5>
+                <p class="card-text">Lámparas incandescentes transparentes. Tonalidad luz cálida. Consumo eléctrico 15w. </p>
+                <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                </div>
+            </div>
+            <div class="col-4 m-3 card" style="width: 18rem;">
+                <img src="../assets/editadas/Guirnalda con lámparas LED PERA cálidas.png" class="card-img-top mt-2" alt="Guirnaldas">
+                <div class="card-body">
+                <h5 class="card-title">Guirnalda LED </h5>
+                <p class="card-text">Lámparas LED transparentes. Forma campana. Tonalidad cálida. Consumo eléctrico 1w. </p>
+                <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                </div>
+            </div>
+            <div class="col-4 m-3 card" style="width: 18rem;">
+                <img src="../assets/editadas/Guirnalda con lámparas LED campana.png" class="card-img-top mt-2" alt="Luminarias">
+                <div class="card-body">
+                <h5 class="card-title">Guirnaldas LED Pera</h5>
+                <p class="card-text">Lámparas LED transparentes. Vintage forma PERA. Tonalidad cálida. Consumo eléctrico 1w.</p>
+                <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                </div>
+            </div>
         </div>
-
-        <div class="guirLed">
-            <h3>
-                GUIRNALDA CON LAMPARAS LED
-            </h3>
-            <p>
-                Lámparas LED de transparentes. Forma campana. Luz tonalidad cálida. Consumo eléctrico 1w Material plástico
-            </p>
-            <img src="../assets/Guirnalda con lámparas LED campana.jpeg" width="350" height="400" alt="Guirnalda con lámparas LED campana">
- 
-            <!-- Boton COMPRAR con link para post mercado libre-->
-            <h4> COMPRAR </h4>                
-            
+        <div class="row">
+            <div class="col-4 m-3 card" style="width: 18rem;">
+                <img src="../assets/editadas/foto3.jpg" class="card-img-top mt-2" alt="Neon">
+                <div class="card-body">
+                <h5 class="card-title">Cartel Astronauta</h5>
+                <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON. </p>
+                <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                </div>
+            </div>
+            <div class="col-4 m-3 card" style="width: 18rem;">
+                <img src="../assets/editadas/foto4.jpg" class="card-img-top mt-2" alt="Guirnaldas">
+                <div class="card-body">
+                <h5 class="card-title">Cartel Tigre </h5>
+                <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON.</p>
+                <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                </div>
+            </div>
+            <div class="col-4 m-3 card" style="width: 18rem;">
+                <img src="../assets/editadas/foto5.jpg" class="card-img-top mt-2" alt="Luminarias">
+                <div class="card-body">
+                <h5 class="card-title">Cartel Helado</h5>
+                <p class="card-text">Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON.</p>
+                <a href="#" class="btn btn-primary botonComprar" style="width: 10rem;">COMPRAR</a>
+                </div>
+            </div>
         </div>
-        
-        <div class="guirPera">
-            <h3>
-                GUIRNALDAS CON LAMPARAS LED PERA
-            </h3>
-            <p>
-                Lámparas LED de transparentes. Vintage forma PERA. Luz tonalidad cálida. Consumo eléctrico 1w. Material plástico
-            </p>
-            <img src="../assets/Guirnalda con lámparas LED PERA cálidas.jpeg" width="350" height="400 "alt="Guirnalda con lámparas LED PERA cálidas">
+    </section>
+
     
-            <!-- Boton COMPRAR con link para post mercado libre-->
-            <h4> COMPRAR </h4>
-        </div>
-
-            <!-- subtitulo carteles de neon -->
-        <div class="prodNeon">
-            <h2> Carteles de Neon </h2>
-            <p> Carteles de Neon sobre acrilico (apto exterior) o sobre MDF (interior). </p>
-        </div>
-
-        <div class="neonTigre">
-            <h3>
-                CARTEL "TIGRE" DE NEON EN ACRILICO
-            </h3>
-            <p>
-                Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON
-            </p>
-            <img src="../assets/Tigre_Neon.jpg" alt=" Foto Tigre Neon ">
-    
-            <!-- Boton COMPRAR con link para post mercado libre-->
-                <h4> COMPRAR </h4>
-        </div>
-
-        <div class="neonEmoji">
-            <h3>
-                CARTEL "EMOJI" DE NEON EN MDF
-            </h3>
-            <p>
-                Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Tira de LED NEON
-            </p>
-            <img src="../assets/Smile_neon.jpg" alt=" Foto Emoji Neon ">
-    
-            <!-- Boton COMPRAR con link para post mercado libre-->
-            <h4> COMPRAR </h4>
-         </div>
-
-         <div class="neonHelado">
-            <h3>
-                CARTEL "HELADO" DE NEON EN ACRILICO
-            </h3>
-            <p>
-                Cartel de 70 cm de ancho por 70 cm de alto en acrilico. Resistente a la intemperie. Tira de LED NEON
-            </p>
-            <img src="../assets/Helado_Neon.jpg" alt=" Foto Emoji Neon ">
-    
-            <!-- Boton COMPRAR con link para post mercado libre-->
-            <h4> COMPRAR </h4>
-         </div>
-    </main>
 
     <footer class="footer">
         <p> Todos los derechos reservados ®</p>
         <a href="#arriba"> Subir </a>
      </footer>
+
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 
 </body>

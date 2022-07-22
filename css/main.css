@@ -3,7 +3,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
     box-sizing: border-box;
     
 }
@@ -16,55 +16,36 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-top: 4px solid tomato;
-    border-bottom: 4px solid tomato;
     
 }
 
-/* estilo menu */
-.menu{
-    height: 100%;
-    z-index: 2;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center; 
-    
-}
 
-.menu ul{
-    display: flex;
-    gap: 10px;
-    margin-right: 5px;
-}
+/* estilos del menu BOOTSTRAP */
 
 /* estilos botones */
-.menu ul li{
-    background-color: tomato;
-    font-size: 15px;
+.botonesMenu li{
     font-weight: bold;
-    list-style: none;
-    padding: 7px;
-    border-radius: 15px;
-    box-shadow: 2px 2px black;
-    transition: 0.5s;
     
-     
 }
 
-/* hover del menu */
-.menu ul li:hover{
-    transform: scale(1.1);
+
+
+.navbar{
+    
+    
 }
 
-/* estilos logo */
-.logo{
-    width: 10rem;
-    top: 4px;
-    z-index: 3;
+.nav-item{
+    
+    font-size: 1rem;
+    
 }
+
 
 /* animacion logo */
 .logo{
+    width: 10rem;
+    top: 4px;
     animation-name: latir;
     animation-iteration-count: initial;
     animation-duration: 1s;
@@ -93,13 +74,14 @@
 .ig{
     height: 20px;
     transition: 0.4s;
+    margin-right: 5px;
     
 }
  /* hover de las redes */
 
 .ig:hover{
     transform: scale(1.5);
-    margin-right:5px;
+    margin-right:7px;
 }
 
 
@@ -111,7 +93,7 @@
 
 .fb:hover{
     transform: scale(1.5);
-    margin-left:5px;
+    margin-left:7px;
 }
 
 /* grid main */
@@ -127,7 +109,7 @@
 
 .presentacion{
     background-image: linear-gradient(to left, rgb(218, 218, 218), rgb(228, 64, 217) );
-    height: 400px;
+    height: 300px;
     grid-area: presentacion;
     width: 100%;
     display: flex;
@@ -187,24 +169,20 @@
 /* estilos footer */
 .footer{
     grid-area: footer;
-    background-color: black;
+    background-color: rgb(66, 64, 64);
     margin-top: 4rem;
-    color: tomato;
+    color: rgb(236, 232, 232);
     text-align: center;
 }
 .footer a{
     color: aliceblue;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     
 }
 
 /* media queries mobile */
 @media screen and (max-width: 800px){
-    .menu ul li{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 11px;
-    }
+   
     .logo{
         display: none;
     }
@@ -236,20 +214,7 @@
 
 /* estilos HTML PRODUCTOS */
 
-.mainProductos{
-    background-color: white;
-    margin-top: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.prodGuir{
-    margin-bottom: 3rem;
-}
 
-.prodNeon{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
 
 @media screen and (min-width: 1024px){
     .mainProductos{
@@ -319,7 +284,7 @@
 .tecnicaNeon{
     grid-area: tecnicaNeon;
 }
-tecnicaLuminarias{
+.tecnicaLuminarias{
     grid-area: tecnicaLuminarias;
 }
 
@@ -336,12 +301,18 @@ tecnicaLuminarias{
 
 
 /* descripcion de informacion tecnica */
+.tituloInfoTecnica{
+    margin-left: 5%;
+    margin-right: 2%;
+}
+.mainInfoTecnica{
+    margin-left: 3%;
+}
 .mainInfoTecnica p{
     margin-left: 20px; 
 }
-.divEspacioInfoTecnica{
-    margin: 550px;
-}
+
+
 
 /* estilos HTML NOSOTROS */
 @media screen and (min-width: 1024px){
@@ -375,13 +346,34 @@ tecnicaLuminarias{
     width: 100%;
 }
 
+
 /* estilos HTML CONSULTA */
+
+.ingresoConsulta{
+    width: 100%;
+    
+}
+.btn{
+    width: 30%;
+}
+.nameForm{
+    width: 100%;
+    
+}
+.mailForm{
+    width: 100%;
+}
 
 .formularioConsulta{
     text-align: center;
     margin-top: 250px;
     margin-bottom: 468px;
     background-color: bisque;
+}
+
+.medioContacto{
+    margin-top: 2.2rem;
+    text-align: end;
 }
 
 
